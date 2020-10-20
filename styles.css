@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    color: white;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    margin-top: 50px;
+}
+
+.featured {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.featured .featured__box {
+    width: 200px;
+    height: 180px;
+    border: 1px solid white;
+}
+
+.overviewTitle {
+    margin-top: 30px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box .box__1 {
+    width: 200px;
+    height: 100px;
+    border: 1px solid white;
+    margin-top: 20px;
+}
