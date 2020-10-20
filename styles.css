@@ -1,41 +1,123 @@
-body {
-    background-color: black;
-    color: white;
-    padding-left: 200px;
-    padding-right: 200px;
+body{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
-header {
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
     display: flex;
-    justify-content: space-around;
-    height: 80px;
-    margin-top: 50px;
+    justify-content: space-between;
 }
 
-.featured {
+.card {
+    width: 23%;
+    height: 200px;
+    background-color: gray;
+    border-radius: 5px;
+    /* border-top: 5px solid blue; */
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-
+    align-items: center;
 }
 
-.featured .featured__box {
-    width: 200px;
-    height: 180px;
-    border: 1px solid white;
+.card1 {
+    border-top: 5px solid #3b5998;
 }
 
-.overviewTitle {
-    margin-top: 30px;
+.card2 {
+    border-top: 5px solid #00ACEE;
+}
+
+.card3 {
+    border-top: 5px solid Linear-gradient(45DEG, #405DE6, #5851DB, #833AB4, #c13584, #E1306C, #FD1D1D);
+}
+
+.card4 {
+    border-top: 5px solid red;
+}
+
+.card__name {
+    display: flex;
+}
+
+.card__name .card__name__logo {
+    margin-right: 5px;
 }
 
 .box {
+    width: 23%;
+    height: 120px;
+    background-color: gray;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
 
-.box .box__1 {
-    width: 200px;
-    height: 100px;
-    border: 1px solid white;
+#header .container {
+    align-items: center;
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#header h1 {
+    margin: 0;
+    padding-left: 10px;
+}
+
+#header p {
+    margin: 0;
+}
+
+.box .box__topRow {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+}
+
+.box .box__bottomRow {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+}
+
+.box .box__topRow .box__topLeft {
+    text-align: left;
+}
+
+.fa-twitter {
+    color: #00ACEE;
+    font-size: 24px;
+}
+
+.fa-facebook-square {
+    color: #3b5998;
+    font-size: 24px;
+}
+
+.igLogo { 
+width:20px; 
+height:20px;
+border-radius: 5px;
+background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+
+/* background: Linear-gradient(45DEG, #405DE6, #5851DB, #833AB4, #c13584, #E1306C, #FD1D1D) */
+}
+
+.redDot {
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
 }
