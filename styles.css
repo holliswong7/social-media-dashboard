@@ -17,7 +17,6 @@ body{
     height: 200px;
     background-color: gray;
     border-radius: 5px;
-    /* border-top: 5px solid blue; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -33,7 +32,20 @@ body{
 }
 
 .card3 {
-    border-top: 5px solid Linear-gradient(45DEG, #405DE6, #5851DB, #833AB4, #c13584, #E1306C, #FD1D1D);
+    border-top: 5px solid red;
+    position: relative;
+}
+
+.card3::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #f09433, #c13584);
+    top: -5px;
+    left: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .card4 {
@@ -105,13 +117,7 @@ body{
 width:20px; 
 height:20px;
 border-radius: 5px;
-background: #f09433; 
-background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-
-/* background: Linear-gradient(45DEG, #405DE6, #5851DB, #833AB4, #c13584, #E1306C, #FD1D1D) */
+background: Linear-gradient(45DEG, #f09433, #c13584)
 }
 
 .redDot {
