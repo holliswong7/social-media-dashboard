@@ -1,5 +1,6 @@
+/* General */
 body{
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
     background-color: #1A1C2B;
@@ -9,22 +10,86 @@ body{
 .container {
     width: 80%;
     margin: auto;
-    overflow: hidden;
     display: flex;
     justify-content: space-between;
 }
 
 .card {
     width: 23%;
-    height: 200px;
+    height: auto;
     background-color: #202741;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
 }
 
+.box {
+    width: 23%;
+    height: 120px;
+    background-color: #202741;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* End of General */
+
+
+/* For each container */
+#header {
+    margin-top: 30px;
+}
+
+#header .container {
+    align-items: center;
+}
+
+#cards {
+    margin-top: 40px;
+}
+
+#title {
+    margin-top: 40px;
+}
+
+#boxes {
+    margin-top: 20px;
+}
+/* End of For each container */
+
+/* header */
+#header .header__left__title {
+    font-size: 25px;
+    padding-left: 15px;
+    margin: 0;
+}
+
+#header .header__left__num {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: x-small;
+    color: #707ba6;
+}
+
+#header .header__right__mode {
+    font-size: x-small;
+    margin: 0;
+    color: #707ba6;
+}
+/* End of header */
+
+/* title */
+#title p {
+    margin: 0;
+    font-size: 20px;
+}
+/* End of title */
+
+
+/* For each Card */
 .card1 {
     border-top: 5px solid #008df8;
 }
@@ -56,19 +121,40 @@ body{
 
 .card__name {
     display: flex;
+    margin-top: 12%;
+    margin-bottom: 8%;
 }
 
 .card__name .card__name__logo {
     margin-right: 5px;
 }
 
+.card__name .card__name__name {
+    font-size: x-small;
+    padding-top: 2px;
+    color: #707ba6;
+}
+
+.card__num {
+    font-size: 45px;
+}
+
+.card__followers {
+    margin-top: 2%;
+    margin-bottom: 10%;
+    font-size: 12px;
+    color: #707ba6;
+}
+
 .card__changes {
     display: flex;
+    font-size: x-small;
+    margin-bottom: 5%;
 }
 
 .card__changes .card__changes__sign .fa-sort-up{
     margin-right: 5px;
-    padding-top: 10px;
+    padding-top: 50%;
     color: #01b789;
 }
 
@@ -78,21 +164,26 @@ body{
 
 .card__changes .card__changes__sign .fa-sort-down{
     margin-right: 5px;
-    padding-top: 2px;
+    padding-top: 10%;
     color: #da3b45;
 }
 
 .card__changes .card__changes__num .down {
     color: #da3b45;
 }
+/* End of For each Card */
 
+
+/* For each Box */
 .box__bottomRight {
     display: flex;
+    font-size: x-small;
+    padding-top: 10%;
 }
 
 .box__bottomRight .box__bottomRight__sign .fa-sort-up{
     margin-right: 5px;
-    padding-top: 10px;
+    padding-top: 50%;
     color: #01b789;
 }
 
@@ -102,7 +193,7 @@ body{
 
 .box__bottomRight .box__bottomRight__sign .fa-sort-down{
     margin-right: 5px;
-    padding-top: 2px;
+    padding-top: 10%;
     color: #da3b45;
 }
 
@@ -110,49 +201,36 @@ body{
     color: #da3b45;
 }
 
-.box {
-    width: 23%;
-    height: 120px;
-    background-color: #202741;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-#header .container {
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#header h1 {
-    margin: 0;
-    padding-left: 10px;
-}
-
-#header p {
-    margin: 0;
-}
-
 .box .box__topRow {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px 0 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
 }
 
 .box .box__bottomRow {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px 0 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
 }
 
 .box .box__topRow .box__topLeft {
-    text-align: left;
+    font-size: small;
+    color: #707ba6;
 }
 
+.box .box__bottomRow .box__bottomLeft {
+    font-size: 30px;
+}
+
+/* End of For each Box */
+
+
+
+/* For all logos */
 .fa-twitter {
     color: #00A0F5;
     font-size: 24px;
@@ -164,10 +242,10 @@ body{
 }
 
 .igLogo { 
-width:20px; 
-height:20px;
-border-radius: 5px;
-background: linear-gradient(45deg, #f9ad6a, #e85f8c);
+    width:20px; 
+    height:20px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #f9ad6a, #e85f8c);
 }
 
 .redDot {
@@ -177,7 +255,66 @@ background: linear-gradient(45deg, #f9ad6a, #e85f8c);
     border-radius: 50%;
     display: inline-block;
 }
+/* End of For all logos */
 
-#title {
-    margin-top: 15px;
+/* For mobile view */
+@media screen and (max-width: 600px) {
+    .container {
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+
+    /* Card */
+    .card {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .card__name {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .card__followers {
+        margin-top: 0;
+        margin-bottom: 5%;
+    }
+    /* End of Card */
+
+    /* Box */
+    #boxes {
+        margin-top: 30px;
+    }
+
+    .box {
+        width: 100%;
+        margin-bottom: 5%; 
+    }
+
+    .box .box__bottomRow .box__bottomLeft {
+        padding-top: 5%;
+    }
+
+    .box .box__topRow, .box .box__bottomRow {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    /* End of Box */
+
+    /* Header */
+    #header .header__left__title {
+        padding-left: 0;
+    }
+
+    #header .header__left {
+        padding-bottom: 5%;
+        border-bottom: 1px solid gray;
+    }
+
+    #header .header__right__mode {
+        margin-top: 5%;
+    }
+    /* End of Header */
 }
+/* End of For mobile view */
