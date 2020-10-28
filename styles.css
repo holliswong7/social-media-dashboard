@@ -1,10 +1,15 @@
 /* General */
-body{
+.body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
     background-color: #1A1C2B;
     color: white;
+}
+
+.body__light {
+    background-color: white;
+    color: black;
 }
 
 .container {
@@ -34,6 +39,14 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.card__box__light {
+    background-color: #F1F3FA;
+}
+
+.card__box__light:hover {
+    background-color: #e1e4f0;
 }
 /* End of General */
 
@@ -74,10 +87,40 @@ body{
     color: #707ba6;
 }
 
+#header .header__right {
+    display: flex;
+}
+
 #header .header__right__mode {
     font-size: x-small;
     margin: 0;
     color: #707ba6;
+    margin-right: 10px;
+}
+
+#header .header__right .button__container {
+    height: 20px;
+    width: 40px;
+    background: linear-gradient(to right, #399ad7, #3badbc, #31ce95);
+    border-radius: 15px;
+    position: relative;
+}
+
+#header .header__right .button__container .button__circle {
+    background-color: #1A1C2B;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    bottom: 2px;
+    border: none;
+    outline:none;
+}
+
+#header .header__right .button__container .button__circle__light {
+    background-color: white;
 }
 /* End of header */
 
@@ -312,7 +355,8 @@ body{
         border-bottom: 1px solid gray;
     }
 
-    #header .header__right__mode {
+    #header .header__right {
+        justify-content: space-between;
         margin-top: 5%;
     }
     /* End of Header */
